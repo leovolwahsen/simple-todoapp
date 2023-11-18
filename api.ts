@@ -1,4 +1,4 @@
-import { ITask } from "./types/task";
+import { ITask } from "./types/tasks";
 
 const baseUrl = 'http://localhost:3001';
 
