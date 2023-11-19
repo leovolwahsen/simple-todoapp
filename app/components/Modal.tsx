@@ -1,7 +1,11 @@
 
-const Modal = () => {
+interface ModalProps {
+    modalOpen: boolean
+}
+
+const Modal: React.FC<ModalProps> = ({ modalOpen }) => {
     return (
-        <div className="modal modal-open">
+        <div className={`modal ${modalOpen ? "modal-open" : ""}`}>
             <div className="modal-box relative">
                 <label
                     htmlFor="my-modal-3"
