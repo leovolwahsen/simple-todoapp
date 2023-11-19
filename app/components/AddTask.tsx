@@ -13,11 +13,13 @@ const AddTask = () => {
       <button onClick={() => setModalOpen(true)} className="btn btn-primary w-full">
         Add new task 
       <AiOutlinePlus 
-        className="ml-2" 
+         className="ml-2" 
         size={18} />
       </button>
 
-      <Modal modalOpen={modalOpen} />
+      <Modal modalOpen={modalOpen} setModalOpen={setModalOpen} >
+        modal to add todos to the list
+      </Modal>
     </div>
   )
 }
